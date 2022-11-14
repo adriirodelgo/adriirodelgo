@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+.bodyy {
+  background: #edf5e1;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  text-shadow: 0.5px 0.5px 0 #CCCCCC;
+}
+
+.background {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: 0.75s;
+}
+
+.nav {
+  padding: 0px;
+  width: 640px;
+  margin: 100px auto auto auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li a {
+  padding: 30px;
+  float: left;
+  width: 100px;
+  text-align: center;
+  font-size: 15px;
+  color: #edf5e1;
+  text-decoration: none;
+}
+
+li a:hover .circle {
+  position: relative;
+  z-index: 1;
+  top: -60px;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  animation: illuminate 2s ease-out infinite;
+  background: #fdc6be;
+}
+
+
+
+.nav li:first-child a {
+  background: #05386b !important;
+}
+
+.nav li:nth-child(2) a {
+  background: #379683 !important;
+}
+
+.nav li:nth-child(3) a {
+  background: #5cdb95 !important;
+}
+
+.nav li:nth-child(4) a {
+  background: #8ee4af !important;
+}
+.nav li:nth-child(5) a {
+    background: #890000 !important;
+  }
+.nav li:nth-child(6) a {
+    background: #00ab2d !important;
+}
+.nav li:nth-child(7) a {
+    background: #318eff !important;
+}
+.nav li:nth-child(8) a {
+  background: #e7b500 !important;
+}
+.nav li:nth-child(9) a {
+  background: #32006f !important;
+}
+.nav li:nth-child(10) a {
+  background: #a70000 !important;
+}
+.nav li:nth-child(11) a {
+  background: #ae00ff !important;
+}
+.nav li:nth-child(12) a {
+  background: #00ffb7 !important;
+}
+.nav li:nth-child(13) a {
+  background: #fff200 !important;
+}
+.nav li:first-child:hover ~ .background {
+  background: #05386b;
+}
+
+.nav li:nth-child(2):hover ~ .background {
+  background: #379683;
+}
+
+.nav li:nth-child(3):hover ~ .background {
+  background: #5cdb95;
+}
+
+.nav li:nth-child(4):hover ~ .background {
+  background: #8ee4af;
+}
+.nav li:nth-child(5):hover ~ .background {
+    background: #890000;
+}
+  .nav li:nth-child(6):hover ~ .background {
+    background: #00ab2d;
+}
+.nav li:nth-child(7):hover ~ .background {
+    background: #318eff;
+}
+.nav li:nth-child(8):hover ~ .background {
+  background: #e7b500;
+}
+.nav li:nth-child(9):hover ~ .background {
+  background: #32006f;
+}
+.nav li:nth-child(10):hover ~ .background {
+  background: #a70000;
+}
+.nav li:nth-child(11):hover ~ .background {
+  background: #ae00ff;
+}
+.nav li:nth-child(12):hover ~ .background {
+  background: #00ffb7;
+}
+.nav li:nth-child(13):hover ~ .background {
+  background: #fff200;
+}
+
+@keyframes illuminate {
+  0% {
+    transform: scale(0.7, 0.7);
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    transform: scale(1.15);
+    opacity: 0;
+  }
+}
