@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 2.17</title>
+</head>
+<body>
+    <h1>Actividad 2.17 ejemplo inclusión de video con iframe/local y local con subtítulos</h1>
+    <table>
+  <tr>
+    <th><p>Video en iframe</p>
+    <iframe width="360" height="195" src="https://www.youtube.com/embed/8hgNwjTLMRw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </th>
+    <th><p>Video en local</p>
+    <video controls width="350">
+      <source src="multimedia/video.mp4" type="video/mp4">
+    </video></th>
+    <th><p>Video en local con subtítulos</p>
+    <video controls width="350">
+      <source src="multimedia/video.mp4" type="video/mp4">
+        <track label="subejemplo" kind="subtitles" src="legales/subejemplo.VTT" srclang="es">
+    </video></th>
+  </tr>
+
+  </table>
+</body>
+</html>
